@@ -2,23 +2,33 @@
 //  ContentView.swift
 //  noticeme-app
 //
-//  Created by Student on 5/6/24.
+//  Created by Sarah Mo on 5/6/24.
 //
 
 import SwiftUI
-
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("Noticeme")
+                .bold()
+            HStack{
+                Button {
+                } label: {
+                    Image(systemName: "rectangle.and.pencil.and.ellipsis")
+                }
+                Text("Start writing here...")
+                    .monospaced()
+            }
+            Button{
+                    } label: {
+                        Image(systemName: "checkmark.square")
+            }
+            
+                
         }
         .padding()
     }
 }
-
 #Preview {
     ContentView()
 }
